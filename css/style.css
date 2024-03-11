@@ -346,6 +346,7 @@ a {
 .nav a {
     padding: 1em;
     border-top: transparent 2px solid;
+    transition: all 1s ease-out;
 } 
 
 .nav a:hover {
