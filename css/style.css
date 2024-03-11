@@ -15,10 +15,6 @@
     color: var(--main-color);
 }
 
-/* .fa-magnifying-glass {
-    display: none;
-} */
-
 body {
     display: flex;
     justify-content: center;
@@ -52,6 +48,7 @@ a {
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    height: 100%;
 }
 
 .card img {
@@ -63,7 +60,7 @@ a {
 }
 
 /* .card-content {
-    height: 5em;
+
 } */
 
 .euro {
@@ -157,6 +154,7 @@ a {
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
+    height: auto;
 }
 
 .populaires-cards img {
@@ -199,7 +197,6 @@ a {
     display: flex;
     gap: 33px;
     margin: 33px 0;
-    /* height: 439px; */
 }
 
 .activites-cards a {
@@ -225,7 +222,6 @@ a {
     justify-content: space-between;
     box-sizing: border-box;
     padding: 1em;
-    /* height: 5em; */
 }
 
 /****** rechercher ***********/
@@ -274,7 +270,6 @@ a {
 
 .rechercher .bar input[type=search] {
     border: 0px;
-    /* padding: 1em 0 1em 1em; */
     background-color: white;
     font-weight: 700;
     font-size: 16px;
@@ -316,7 +311,7 @@ a {
     border: 1px solid var(--xxx-bg-color);
     width: fit-content;
     gap: 1em;
-
+    transition: all 1s ease-out;
 }
 
 .filtre .btn:hover {
@@ -350,6 +345,7 @@ a {
 
 .nav a {
     padding: 1em;
+    border-top: transparent 2px solid;
 } 
 
 .nav a:hover {
@@ -386,14 +382,6 @@ a {
     .activites-cards img {
         height: 200px;
     }
-
-    /* .activites-cards { 
-        height: 270px;
-    } */
-
-    /* .activites-cards .card-content {
-        height: 5em;
-    } */
 
     .hebergements-and-populaires {
         flex-direction: column;
@@ -441,10 +429,11 @@ a {
     .nav a {
         flex: 1;
         text-align: center;
+        border-bottom: transparent 2px solid;
     }
 
     .nav a:hover {
-        border-top: inherit;
+        border-top: transparent 2px solid;
         border-bottom: var(--main-color) 2px solid;
     }
 
@@ -502,5 +491,13 @@ a {
 
     .populaires-cards a {
         width: 100%;
+    }
+
+    .hebergements-cards img {
+        height: 124px;
+    }
+
+    .activites-cards img {
+        height: 141px;
     }
 }
